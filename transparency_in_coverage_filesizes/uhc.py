@@ -36,5 +36,5 @@ async def fetch_url_sizes(table, urls):
 print("Fetching URLs and their sizes...")    
 asyncio.run(fetch_url_sizes("in_network_files", urls))
 total = cur.execute("SELECT SUM(size) FROM in_network_files").fetchone()[0]
-
+#This is crazy!
 print(f"Total filesize in GB: {total//1_000_000_000}")
